@@ -1,7 +1,6 @@
 body {
-background: #F0F8FF url(https://i.imgur.com/4lPGmZ7.jpg)
-  
-  
+background: #F0F8FF url(https://i.imgur.com/4lPGmZ7.jpg) repeat-x;
+}  
 #wrap {
 width:700px;
 margin:0px auto 15px auto;

@@ -48,5 +48,11 @@ margin:0px auto 15px auto;
         color:#FFFFFF;
 }
 #topmenu a:hover{
-  
+        color:#ffffff
+        background-color: #ff6699;
+}
+#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
+        color:#FFFFFF;
+        background-color: #800000;
+}
         

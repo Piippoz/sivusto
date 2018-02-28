@@ -1,3 +1,14 @@
+body {
+background: #F0F8FF url(https://i.imgur.com/4lPGmZ7.jpg)
+  
+  
+#wrap {
+width:700px;
+margin:0px auto 15px auto;
+  font-family:Lucida Console, Monaco, monospace;
+  font-size:14px;
+  color: #FF00FF;
+}  
 /* Header */
 #header {
   height:242PX;

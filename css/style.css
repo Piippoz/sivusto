@@ -6,86 +6,82 @@ background: #F0F8FF url(https://i.pinimg.com/originals/12/95/66/129566aaed9d8802
   background-size: cover;
   text-align:center;
 } 
-</style> 
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
 
-
-}  
-#wrap {
-width:700px;
-margin:0px auto 15px auto;
-  font-family:Lucida Console, Monaco, monospace;
-  font-size:14px;
-  color: #FF00FF;
-}  
-/* Header */
-#header {
-  height:242PX;
-  margin:0px auto 15px auto;
-  font-family:Lucida Console, Monaco, monospace;
-  color: #00FFFF;
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
   }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
 
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>The Puplit Rock</h1>
+</div>
 
-/* Header Menu*/
-#topmenu {
-        display:block;
-        list-style:square;
-        padding:0 0px 0px 278px;
-        float: right;
-        width: 415px;
-}
-#topmenu li {
-        display:inline; 
-}
-#topmenu a {
-        display:block;
-        float:left;
-        height:28px;
-        margin:0px 0px 0px0px;
-        text-decoration:none;
-        padding:9px 15px 0px 15px;
-        text-align:center;
-}
-#topmenu a, #topmenu a:visited, #topmenu a:active {
-        color:#FFFFFF;
-}
-#topmenu a:hover{
-        color:#ffffff
-        background-color: #ff6699;
-}
-#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
-        color:#FFFFFF;
-        background-color: #800000;
-}
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">The Drive</div>
+    <div class="menuitem">The Walk</div>
+    <div class="menuitem">The Return</div>
+    <div class="menuitem">The End</div>
+  </div>
 
+  <div class="main">
+    <h2>The Walk</h2>
+    <p>The walk to the Pulpit Rock will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <img src="img_pulpit.jpg" style="width:100%">
+  </div>
 
-/*Content*/
-#content {
-        background-color: #FFFFFF;
-}
-#mainpage {
-        width:700px;
-        float:left;
-        padding:5px 5px 5px 0px;
-        height:auto
-}
-#mainpage p {
-        line-height:22px;
-        margin:10px 0px 22px 0px;
-        text-align: justify;
-}
-#mainpage blockquote {
-        background:#efefef;
-        display:block;
-        margin:5px;
-        font:Helvetica, Georgia, Verdana, serif;
-        font-style:italic;}
-h1, h2, h3, h4, h5 {
-        color:#B32C0E: 
-        font-weight:bold;
-        font-family: Arial, Helvetica, sans-serif;
-}
-#mainpage h1 {
-        font-size:24px;
-        color: #F2F7F3;
-}
+  <div class="right">
+    <h2>What?</h2>
+    <p>The Pulpit Rock is a part of a mountain that looks like a pulpit.</p>
+    <h2>Where?</h2>
+    <p>The Pulpit Rock is in Norway.</p>
+    <h2>Price?</h2>
+    <p>The Walk is free!</p>
+  </div>
+</div>
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>
